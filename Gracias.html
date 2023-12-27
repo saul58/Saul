@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducir Audio al Tocar la Imagen</title>
+</head>
+<body>
+
+<img id="imagen" src="soon.png" alt="Imagen" onclick="reproducirAudio()">
+
+<audio id="audio">
+    <source src="T.Q.M.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+    function reproducirAudio() {
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
